@@ -1,15 +1,16 @@
-# 1. 서버와 클라이언트
+# 1. Intro 
+## 1-1. 서버와 클라이언트
    - 클라이언트: 서버에게 요청하는 대상
    - 서버: 요청받은 서비스를 알맞게 응답해주는 대상
 
-## 1-1. 웹(Web)
+## 1-2. 웹(Web)
    - 요청과 응답이 일어나는 장소.
 
-## 1-2. 웹 브라우저(Web Browser)
+## 1-3. 웹 브라우저(Web Browser)
    - 사용자의 요청에 맞는 주소로 찾아가서 인터넷 컨텐츠(문서와 그림, 파일 등)를
    - 검색 및 열람 후 사용자에게 응답하기 위한 응용 프로그램의 총칭이다.
 
-## 1-3. 프로토콜(Protocol): 통신 규약
+## 1-4. 프로토콜(Protocol): 통신 규약
    - 클라이언트의 요청에 반드시 응답해야한다는 약속.
 
    - http:// (Hypertext Transfer Protocol)  
@@ -18,17 +19,17 @@
    - https:// (Hypertext Transfer Protocol Secure Socket)  
       SSL 프로토콜을 이용해서 자원을 암호화한 뒤 통신하는 규약  
 
-## 1-4. IP(Internet Protocol)
+## 1-5. IP(Internet Protocol)
    - 클라이언트가 찾아갈 서버의 고유한 값, 컴퓨터가 다른 컴퓨터와 구별될 수 있도록
    - 중복이 없는 값으로 설정되며, 네트워크 상에서 사용된다.
 
-## 1-5. 도메인(Domain)
+## 1-6. 도메인(Domain)
    - IP 주소는 기억하고 이해하기 힘들기 때문에 이를 위해서 이름(별칭)을 붙일 수 있도록 한 것.
 
-## 1-6. WWW(World Wide Web)
+## 1-7. WWW(World Wide Web)
    - 인터넷에 연결된 전 세계 컴퓨터들을 통해 사람들이 정보를 공유할 수 있는 정보 공간.
 
-## 1-7. W3C
+## 1-8. W3C
    - WWW를 위한 표준을 제정하고 관리하는 중립적인 기관이다.
 <hr/>
 
@@ -108,75 +109,78 @@
 
     2. 속성 이름 다음에는 등호(=)를 작성한다.
     3. 속성 값은 따옴표 안에 작성한다.
----------------------------------------------------------------------------------
-HTML 요소의 종류
-   ▶ 블록 요소
-      - p, h, ul, ol, div, form, ... 등
-      - 웹 페이지 상에 블록(영역)을 만드는 요소
-      - 코드 상에 한 줄로 이어써도 화면 상에서는 앞 뒤 요소 사이에 새로운 줄을 만들어서
-        줄을 만든 뒤 나타난다.
-        <p>apple</p><p>banana</p>
-      - 영역이 정확히 구분되어 있기 때문에, width와 height 속성을 수정할 수 있다.
-      - margin-top, margin-bottom 속성도 잘 적용된다(바깥 여백 상하).
-      - padding-top, padding-bottom 속성도 잘 적용된다(안쪽 여백 상하).
+<hr/>
 
-   ▶ 인라인 요소
-      - span, a, img, strong, em, ... 등
-      - 새로운 줄을 만들지 않고 작성한 단락 내에 나타난다.
-      - 안에 있는 내용만큼만 영역을 차지하고 기본적으로 가지고 있는 영역은 없다.
-        <em>apple</em><span>banana</span>
-      - 영역이 불분명하기 때문에 width와 height를 임의로 부여할 수 없다.
-      - margin-top, margin-bottom 속성은 부여할 수 없다(바깥 여백 상하).
-      - padding-top, padding-bottom 속성은 부여할 수는 있지만 전체적인 구조를 잡기는 힘들다.(안쪽 여백 상하).
+# 5. HTML 요소의 종류
+      ▶ 블록 요소
+         - p, h, ul, ol, div, form, ... 등
+         - 웹 페이지 상에 블록(영역)을 만드는 요소
+         - 코드 상에 한 줄로 이어써도 화면 상에서는 앞 뒤 요소 사이에 새로운 줄을 만들어서
+           줄을 만든 뒤 나타난다.
+           <p>apple</p><p>banana</p>
+         - 영역이 정확히 구분되어 있기 때문에, width와 height 속성을 수정할 수 있다.
+         - margin-top, margin-bottom 속성도 잘 적용된다(바깥 여백 상하).
+         - padding-top, padding-bottom 속성도 잘 적용된다(안쪽 여백 상하).
+   
+      ▶ 인라인 요소
+         - span, a, img, strong, em, ... 등
+         - 새로운 줄을 만들지 않고 작성한 단락 내에 나타난다.
+         - 안에 있는 내용만큼만 영역을 차지하고 기본적으로 가지고 있는 영역은 없다.
+           <em>apple</em><span>banana</span>
+         - 영역이 불분명하기 때문에 width와 height를 임의로 부여할 수 없다.
+         - margin-top, margin-bottom 속성은 부여할 수 없다(바깥 여백 상하).
+         - padding-top, padding-bottom 속성은 부여할 수는 있지만 전체적인 구조를 잡기는 힘들다.(안쪽 여백 상하).
+   
+      ▶ 인라인 블록 요소
+         - button, input, select, ... 등
+         - inline 요소와 동일한 영역(내용만큼)을 가지지만 본인만의 영역을 정확히 가지고 있다.
+         - width와 height를 설정할 수 있고,
+           margin-top, margin-bottom, padding-top, padding-bottom 모두 잘 적용된다.
+<hr/>
 
-   ▶ 인라인 블록 요소
-      - button, input, select, ... 등
-      - inline 요소와 동일한 영역(내용만큼)을 가지지만 본인만의 영역을 정확히 가지고 있다.
-      - width와 height를 설정할 수 있고,
-        margin-top, margin-bottom, padding-top, padding-bottom 모두 잘 적용된다.
---------------------------------------------------------------------------------------------------
-form 태그
-   웹 페이지 내에서 사용자로부터 입력을 받을 때 사용하는 태그
-   사용자가 입력한 데이터를 처리하기 위해서 다른 곳으로 전송할 때 form 태그를 사용한다.
+# 6. form, input 태그
+## 6-1. form 태그
+   - 웹 페이지 내에서 사용자로부터 입력을 받을 때 사용하는 태그
+   - 사용자가 입력한 데이터를 처리하기 위해서 다른 곳으로 전송할 때 form 태그를 사용한다.
 
-   <form action="" method="" name="">
-      입력 태그
-      입력 태그
-      입력 태그
-      ...
-   </form>
-
-   - action: 데이터를 전송할 페이지의 경로
-   - method: 데이터를 전송하는 방식
-   - name: form 태그의 이름을 설정
+         <form action="" method="" name="">
+            입력 태그
+            입력 태그
+            입력 태그
+            ...
+         </form>
+      
+         - action: 데이터를 전송할 페이지의 경로
+         - method: 데이터를 전송하는 방식
+         - name: form 태그의 이름을 설정
 
 
-input 태그
-   type : 입력 종류를 설정
-   name : value의 key값
-   value : 사용자가 입력한 값(입력 전에 미리 값을 넣어줄 수 있다).
-   placeholder : 값은 아니지만 미리 출력해줄 문구를 작성할 수 있다.
-   readonly : 수정할 수 없도록 하는 설정
-   required : 필수 항목
-   maxlength : 글자 수 제한
+## 6-2. input 태그
+      type : 입력 종류를 설정
+      name : value의 key값
+      value : 사용자가 입력한 값(입력 전에 미리 값을 넣어줄 수 있다).
+      placeholder : 값은 아니지만 미리 출력해줄 문구를 작성할 수 있다.
+      readonly : 수정할 수 없도록 하는 설정
+      required : 필수 항목
+      maxlength : 글자 수 제한
 
-input 태그의 type
-   <input type="">
-
-   *text
-   *password
-   *radio
-   *checkbox
-   *button, submit, reset
-   *date
-   *file
-   color
-   email
-   url
-   tel
-   number, min, max, step
-   range
-   search
+## 6-3. input 태그의 type
+      <input type="">
+   
+      *text
+      *password
+      *radio
+      *checkbox
+      *button, submit, reset
+      *date
+      *file
+      color
+      email
+      url
+      tel
+      number, min, max, step
+      range
+      search
 
    
 
