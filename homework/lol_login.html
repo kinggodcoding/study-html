@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://lolstatic-a.akamaihd.net/rso-authenticator-ui/0.50.50/assets/favicon.ico" type="image/x-icon">
+    <title>로그인</title>
+</head>
+<body>
+    <!--
+    <div>
+        <img width="168.66px" height="64px" src="https://img1.daumcdn.net/thumb/R658x0.q70/?fname=https://t1.daumcdn.net/news/201904/17/fomos/20190417113621278guzf.jpg" alt="">
+    </div>
+    -->
+    
+    <div>
+        <img width="168.66px" height="64px" src="riot.png" alt="">
+    </div>
+    <div>
+        <h2>로그인</h2>
+    </div>
+    <div>
+        <input type = "text" placeholder="계정이름" style="width:364.54px;height:44px;font-size:10px;">
+    </div>
+    <div>
+        <input type = "password" placeholder="비밀번호" style="width:364.54px;height:44px;font-size:10px;">
+    </div>
+
+    <!--facebook-->
+    <label for="facebook">
+        <img width = "87.94px" height="32px" src="facebook.png" alt="">
+    </label>
+    <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=344190606773871&kid_directed_site=0&app_id=344190606773871&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv13.0%2Fdialog%2Foauth%3Fclient_id%3D344190606773871%26redirect_uri%3Dhttps%253A%252F%252Fauthenticate.riotgames.com%252Fredirects%252Ffacebook%26state%3De6af3e26a86cf5b1ef2cd90f5cabbb89701b76d486de8b099dd75501fc34%26scope%3Demail%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D0416074e-462f-4e8b-bfd7-328e319a7037%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fauthenticate.riotgames.com%2Fredirects%2Ffacebook%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3De6af3e26a86cf5b1ef2cd90f5cabbb89701b76d486de8b099dd75501fc34%23_%3D_&display=page&locale=ko_KR&pl_dbl=0">
+        <input type="button" name="" id="facebook" style="display: none;">
+    </a>
+    
+    <!--google-->
+    <label for="goole">
+        <img width = "87.94px" height="32px" src="google.png" alt="">
+    </label>
+    <a href="https://www.google.com">
+        <input type="button" name="" id="google" style="display: none;">
+    </a>
+
+    <!--apple-->
+    <label for="apple">
+        <img width = "87.94px" height="32px" src="apple.png" alt="">
+    </label>
+    <a href="https://appleid.apple.com/auth/authorize?response_type=code%20id_token&response_mode=form_post&client_id=com.riotgames.authenticator.prod.client&redirect_uri=https%3A%2F%2Fauthenticate.riotgames.com%2Fredirects%2Fapple&scope=name%20email&nonce=ed47bbf95d282863bb999b1ac094d480a2b0d7a79e59bb9c5aec386a15e9&state=8c128b810b575199020969fbd8dae5e22bf3939422a327b531f8db828bce">
+        <input type="button" name="" id="apple" style="display: none;">
+    </a>
+
+    <!--micro-->
+    <label for="micro">
+        <img width = "87.94px" height="32px" src="micro.png" alt="">
+    </label>
+    <a href="https://login.live.com/oauth20_authorize.srf?client_id=a2e930dd-746b-4a29-aa3e-23c2c1cdd78d&scope=openid+email+xboxlive.signin+xboxlive.offline_access&redirect_uri=https%3a%2f%2fauthenticate.riotgames.com%2fredirects%2fxbox&response_type=code&state=1e413997ac45f66b81cbedde71db79442703e6618ff0fdedf582114ffffe&prompt=select_account&uaid=45c91a3b71ae4551a00694c02d21a751&msproxy=1&issuer=mso&tenant=consumers&ui_locales=ko-KR&epct=PAQABAAEAAAAmoFfGtYxvRrNriQdPKIZ-e8iuyQ8i3zW107NsDeB_TGYB94Y1eK4X4xpyxUiJnGp03DdL45AOEGOKf7G7783dzQnAV-TxvvK_DRp7G5-HVR5742TZlXErH1C6yStZNgBplj6kvn6oRgFUUS_LC5AMFg4GjVxQBmVoHyh8JmZQXRngNNtY71LAWU1dAtM1LDsZ-ZFj7fS7B82j0XgpOc3N9Hc1R6cQZLCXHmrKu79mwyAA&jshs=0#">
+        <input type="button" name="" id="micro" style="display: none;">
+    </a>
+
+    <div>
+        <h6>
+            <label>
+                <input type="checkbox" name="" id=""> 로그인 상태 유지 
+            </label>
+        </h6>
+    </div>
+
+    <!--login-->
+    <div>
+        <label for="login">
+            <img width = "74px" height="74px" src="login.png" alt="">
+        </label>
+        <input type="button" name="" id="login" style="display: none;">
+    </div>
+    <a href="https://recovery.riotgames.com/ko"><h6>로그인이 안되시나요?</h6></a>
+    <a href="https://recovery.riotgames.com/ko"><h6>계정 생성</h6></a>
+
+    <div>
+        <span style="font-size:10.24px">
+            <a href="https://support-leagueoflegends.riotgames.com/hc/ko" target="_blank">고객 지원&nbsp;&nbsp;&nbsp;</a>
+        </span>
+
+        <span style="font-size:10.24px">
+            <a href="https://legal.kr.riotgames.com/privacy" target="_blank">개인정보 처리방침&nbsp;&nbsp;&nbsp;</a>
+        </span>
+
+        <span style="font-size:10.24px">
+            <a href="https://legal.kr.riotgames.com/tos" target="_blank">서비스 약관&nbsp;&nbsp;&nbsp;</a>
+        </span>
+
+        <span style="font-size:10.24px">
+            <a href="https://legal.kr.riotgames.com/tos">쿠키 설정&nbsp;&nbsp;&nbsp;</a>
+        </span>
+
+        <span>
+            <select name="language">
+                <option value="" selected>EN🌐</option>
+                <option value="eng">English</option>
+                <option value="kor">한국어</option>
+                <option value="jap">日本語</option>
+                <option value="china">中国</option>
+                <option value="teoki">Türkçe</option>
+            </select>
+        </span>
+    </div>
+
+    
+    <h6>이 사이트는 개인정보 HCAPTCHA로 보호되고 있으며 HCAPTCHA의 
+        <a href = "https://www.hcaptcha.com/privacy" target="_blank">개인정보 처리방침</a>
+        및 <a href = "https://www.hcaptcha.com/terms" target="_blank">서비스 약관</a>
+        이 적용됩니다.
+    </h6>   
+
+</body>
+</html>
